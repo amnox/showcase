@@ -1,6 +1,6 @@
 <?php require_once( 'couch/cms.php' ); ?>
 
-<cms:template title='Showcase Categories'>
+<cms:template title='Showcase Categories' clonable='1'>
 
     <cms:repeatable name='websites' >
         <cms:editable type='image' name='website_preview' label='Website Preview' />
@@ -98,7 +98,7 @@
                                         <div class="portfolio-img bg-webmasons position-relative text-center overflow-hidden">
                                             <img src="<cms:show website_preview />" alt="" data-no-retina="">
                                             <div class="portfolio-icon">
-                                                <a href="<cms:show link />"><i class="fa fa-link text-extra-dark-gray" aria-hidden="true"></i></a>
+                                                <a href="<cms:show link />" target="_blank"><i class="fa fa-link text-extra-dark-gray" aria-hidden="true"></i></a>
                                             </div>
                                         </div>
                                         <figcaption class="bg-white">
