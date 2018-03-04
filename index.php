@@ -1,5 +1,7 @@
 <?php require_once( 'couch/cms.php' ); ?>
 
+<cms:template title='Showcase Categories'>
+</cms:template>
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
