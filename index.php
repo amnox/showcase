@@ -1,6 +1,14 @@
 <?php require_once( 'couch/cms.php' ); ?>
 
 <cms:template title='Showcase Categories'>
+
+    <cms:repeatable name='websites' >
+        <cms:editable type='image' name='website_preview' label='Website Preview' />
+        <cms:editable type='text' name='link' label='Link' desc='Enter Website Link' />
+        <cms:editable type='text' name='website_name' label='Template Name' desc='Enter Template Name' />
+        <cms:editable type='text' name='tags' label='Tags' desc='Enter Website Tags' />
+    </cms:repeatable>
+
 </cms:template>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -84,6 +92,7 @@
                             <ul class="portfolio-grid work-3col gutter-large hover-option6 lightbox-portfolio" style="position: relative; height: 798.312px;">
                                 <li class="grid-sizer"></li>
                                 <!-- start portfolio item -->
+                                <cms:show_repeatable 'websites' >
                                 <li class="grid-item zoomIn last-paragraph-no-margin" style="position: absolute; left: 0%; top: 0px; visibility: visible; animation-name: zoomIn;">
                                     <figure>
                                         <div class="portfolio-img bg-webmasons position-relative text-center overflow-hidden">
@@ -104,6 +113,7 @@
                                         </figcaption>
                                     </figure>
                                 </li>
+                                </cms:show_repeatable>
                                 <!-- end portfolio item -->
                             </ul>
                         </div>
