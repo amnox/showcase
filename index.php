@@ -10,6 +10,8 @@
     </cms:repeatable>
 
 </cms:template>
+
+<cms:if k_is_page >
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
@@ -197,5 +199,11 @@
         <script type="text/javascript" src="./js/main.js"></script>
     </body>
 </html>
+
+<cms:else />
+
+<h1>Wheelin dealin</h1>
+
+</cms:if>
 
 <?php COUCH::invoke(); ?>
