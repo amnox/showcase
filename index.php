@@ -1,3 +1,5 @@
+<?php require_once( 'couch/cms.php' ); ?>
+
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
@@ -183,3 +185,5 @@
         <script type="text/javascript" src="./js/main.js"></script>
     </body>
 </html>
+
+<?php COUCH::invoke(); ?>
