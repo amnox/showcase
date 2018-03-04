@@ -96,17 +96,17 @@
                                 <li class="grid-item zoomIn last-paragraph-no-margin" style="position: absolute; left: 0%; top: 0px; visibility: visible; animation-name: zoomIn;">
                                     <figure>
                                         <div class="portfolio-img bg-webmasons position-relative text-center overflow-hidden">
-                                            <img src="./images/portfolio-item33.jpg" alt="" data-no-retina="">
+                                            <img src="<cms:show website_preview />" alt="" data-no-retina="">
                                             <div class="portfolio-icon">
-                                                <a href="./single-project-page-01.html"><i class="fa fa-link text-extra-dark-gray" aria-hidden="true"></i></a>
+                                                <a href="<cms:show link />"><i class="fa fa-link text-extra-dark-gray" aria-hidden="true"></i></a>
                                             </div>
                                         </div>
                                         <figcaption class="bg-white">
                                             <div class="portfolio-hover-main text-center">
                                                 <div class="portfolio-hover-box vertical-align-middle">
                                                     <div class="portfolio-hover-content position-relative">
-                                                        <a href="./single-project-page-01.html"><span class="line-height-normal font-weight-500 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase display-block">Herbal Beauty Salon</span></a>
-                                                        <p class="text-medium-gray text-extra-small text-uppercase">Branding and Identity</p>
+                                                        <a href="./single-project-page-01.html"><span class="line-height-normal font-weight-500 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase display-block"><cms:show website_name /></span></a>
+                                                        <p class="text-medium-gray text-extra-small text-uppercase"><cms:show tags /></p>
                                                     </div>
                                                 </div>
                                             </div>
